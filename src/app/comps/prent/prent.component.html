@@ -1,0 +1,24 @@
+<p>prent works!</p>
+
+
+<input #in1 (input)="inval1=in1.value">
+<br>
+<br>
+<input #in2 (input)="inval2=in2.value">
+<br>
+<br>
+<!-- <button (click)="clickFn(in1.value,in2.value)">click</button> -->
+
+<!-- 1 option -->
+
+<!-- <app-child [param1]="inval1" [param2]="inval2" (param3)="num.innerHTML=$event"></app-child>
+
+<div #num></div> -->
+
+<!-- 1 option -->
+<app-child [param1]="inval1" [param2]="inval2" (param3)="num($event)"></app-child>
+
+<div >{{outval1}}</div>
+
+
+<!-- child-prent -->
